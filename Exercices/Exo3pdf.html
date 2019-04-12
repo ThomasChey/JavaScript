@@ -1,0 +1,103 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exo3pdf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+
+
+    <script>
+      /*   var sexe = prompt('Saisir son sexe, m ou f')
+            age = parseInt(prompt('Saisir son age'))
+        if(sexe == 'm' && age >= 20 || sexe == 'f' && age >= 18 && age <= 35)
+        {
+            alert("Vous êtes imposable !")
+        }
+        else 
+        {
+            alert("Vous n'êtes pas imposable !")
+        } */
+        //*******************************************************************************
+        var sexe = prompt('Saisir son sexe, homme ou femme ?')
+       
+        while(sexe !== "homme" && sexe !== "femme"){
+            sexe=prompt('Saisir son sexe, homme ou femme ?');
+        }
+
+        var age = prompt('Saisir votre âge ?')
+
+        while(isNaN(age) || age<1 || age>110){
+            age = prompt('Saisir votre âge ?');
+        }
+
+        if(sexe == 'homme' && age >= 20 || sexe == 'femme' && age >= 18 && age <= 35)
+        {
+            alert("Vous êtes imposable !");
+        }
+        else 
+        {
+            alert("Vous n'êtes pas imposable !");
+        }
+        //*******************************************************************************
+        //*******************************CORRECTION**************************************
+        //*******************************************************************************
+
+        /*
+        *ALGO ImpotAlgolandia
+
+        *INIT
+        *VAR SEXE : CAR
+        *VAR AGE : INT
+        *VAR IMPOSABLE : BOOL
+        *
+        *TRAITEMENT
+        *
+        * IMPOSABLE = VRAI
+        * SEXE = SAISIR("Entrez le sexe (m/f)")
+        * AGE = SAISIR("Entrez l'âge")
+        * 
+        * SI SEXE == "m" ET AGE > 20 ALORS
+        *   IMPOSABLE = VRAI
+        * SINON
+        *   IMPOSABLE = FAUX
+        * 
+        * SORTIE
+        * SI IMPOSABLE == VRAI ALORS 
+        *   AFFICHER("Vous êtes imposable")
+        * SINON
+        *   AFFICHER("Vous n'êtes pas imposable")
+        */
+
+        //INIT
+        var sexe, age, imposable
+
+        //TRAITEMENT
+        imposable = true
+        sexe = prompt('Entrez le sexe (m/f)')
+        age = parseInt(prompt("Entrez votre age"))
+
+        if(sexe == "m" && age > 20){
+            imposable = true 
+        }
+        else if(sexe == "f" && (age > 18 && age < 35)){
+            imposable = true
+        }
+        else{
+            imposable = false
+        }
+
+        //SORTIE
+        if(imposable == true){
+            alert("Tu paies !")
+        }
+        else{
+            alert("Tu paies que dalle ! C'est cool !")
+        }
+    </script>
+</body>
+</html>

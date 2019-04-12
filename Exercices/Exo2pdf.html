@@ -1,0 +1,56 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exo2pdf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+
+
+    <script>
+        var liste = [
+            { nom: "Julien", quantite: 110 },
+            { nom: "Franck", quantite: 80 },
+            { nom: "John", quantite: 240 },
+            { nom: "Jojo", quantite: 310 },
+            { nom: "Jean", quantite: 150 },
+            { nom: "Shinichi", quantite: 280 },
+            { nom: "Yoh", quantite: 50 },
+        ];
+
+
+        testListe(liste);
+        
+
+        function total(quantite) {
+            var tarif1 = 0.10, tarif2 = 0.09, tarif3 = 0.08, prix;
+
+            if (quantite <= 10) {
+                prix = tarif1 * quantite;
+            }
+            else if (quantite <= 30) {
+                prix = tarif1 * 10 + tarif2 * (quantite - 10)
+            }
+            else {
+                prix = tarif1 * 10 + tarif2 * 20 + tarif3 * (quantite - 30)
+            }
+
+            return prix.toFixed(2)
+        }
+        function testListe(listing) {
+            for (var i = 0; i < listing.length; i++) {
+                console.log(listing[i].nom + " " + listing[i].quantite + " " + total(listing[i].quantite))
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>

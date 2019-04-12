@@ -1,0 +1,6 @@
+1) Créer une variable eleves qui est un tableau avec 5 élèves
+Dans chaque indice du tableau, insérer un objet qui a un nom et une note.
+
+2) Dans un console.log afficher le nom de l'élève 0
+
+3) Afficher dans la console si Jean-louis à la moyenne ou pas

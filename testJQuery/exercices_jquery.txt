@@ -1,0 +1,13 @@
+Exercices à faire avec JQuery ; créer un fichier pour chaque exercice afin d'éviter de se mélanger les pinceaux au fil des exercices. ex : exo1.html
+
+EXO1) interdire le clic droit sur une page
+
+EXO2) écrire un formulaire et rendre inactive le bouton d'envoye si les éléments obligatoire du formulaire ne sont pas remplies
+
+EXO3) copier cette phrase : "Aujourd'hui des NOUVELLES offres en promo" et faire en sorte que "NOUVELLES" soit en gras et clignote
+
+EXO4) faire une page avec du contenu. Puis créer un bouton qui permet lors d'un clic dessus, d'imprimer la page.
+
+EXO5) créer 2 div ou p avec chacune un contenu différent. Puis, créer un bouton qui déplace le contenu de la div/p 1 dans la 2 et inversement.
+
+EXO6) créer un formulaire avec nom, email, tel. Et faire en sorte de contrôler les entrées.

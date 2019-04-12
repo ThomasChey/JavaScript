@@ -1,0 +1,7 @@
+﻿1) créer une variable contenant un grand texte
+
+2) dire combien de fois apparait chaque mot
+
+3) afficher le résultat
+
+4) Si fini, faire en sorte que son programme soit réutilisable; l'essayer dans un autre texte

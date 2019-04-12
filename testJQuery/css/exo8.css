@@ -1,0 +1,9 @@
+div {
+    position: absolute;
+    background: linear-gradient(to right, #21B50E 0%, #E3DC00 50%, #D60000 100%);
+    left: 80px;
+    width: 100px;
+    height: 100px;
+    margin: 25px;
+    text-align: center;
+  }

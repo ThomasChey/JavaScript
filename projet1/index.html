@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!-- Première méthode d'appel à un script, de manière extérieur
+        par lien
+        --> 
+        <script src="./js/script1.js"></script>
+    </head>
+    <body>
+        <title></title>
+        <section></section>
+        <div></div>
+
+        <!-- deuxième méthode d'appel à un script, de manière interne
+        directement dans la page
+        --> 
+        <script >
+ 
+        var start = 'Bonjour ', name, end = ' !', result; 
+         
+        
+        do
+        {
+            name = prompt('Quel est votre prénom ?');
+        }
+        while(name== "")
+
+        result = start + name + end; alert(result);
+
+        </script>
+    </body>
+</html>

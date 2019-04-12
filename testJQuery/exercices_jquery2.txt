@@ -1,0 +1,17 @@
+EXO7) créer un bouton qui affiche si on a cliqué avec le clic droit ou gauche
+
+EXO8) écrire le script qui fait bouger la div avec la classe bloc de 50px à gauche/droite selon le button sur lequel on clique:
+<body>
+<button id="gauche"><</button>
+<button id="droite">></button>
+<div class="bloc"></div>
+</body>
+
+div {
+    position: absolute;
+    background-color: #0066ff;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+  }

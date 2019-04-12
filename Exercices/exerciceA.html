@@ -1,0 +1,67 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+
+
+    <script>
+         var classeA = [
+            {nom: 'Jean-michel', note: 15}, // Crée des objets dans un tableau
+            {nom: 'Jean-louis', note: 13},
+            {nom: 'Jean-roger', note: 10},];
+        var classeB = [
+            {nom: 'Raoul', note: 18},
+            {nom: 'Jeje', note: 5},
+            {nom: 'Franck', note: 8}
+            ];
+        
+          // console.log(eleves[0].nom); 
+
+        /* if(eleves[1].note>=10) {
+            console.log('Tu as la moyenne')
+        }
+        else{
+            console.log("Tu n'as pas la moyenne")
+        }
+        */
+
+        testMoyenne(classeA); // Dire si les élèves de la classe A ont la moyenne ou pas pour chaque eleves
+        testMoyenne(classeB); // Dire si les élèves de la classe B ont la moyenne ou pas pour chaque eleves
+
+        function testMoyenne(classe)
+        {
+            for ( var i = 0; i < classe.length ; i++)
+        {
+            if(classe[i].note>=10){
+                console.log(classe[i].nom + ' as la moyenne');
+            }
+            else{
+                console.log(classe[i].nom + " n'as pas la moyenne");
+            }
+        }
+        
+        }
+
+
+
+
+
+
+        /* for ( var i = 0; i < eleves.length ; i++)
+        {
+            if(eleves[i].note>=10){
+                console.log(eleves[i].nom + ' as la moyenne');
+            }
+            else{
+                console.log(eleves[i].nom + " n'as pas la moyenne");
+            }
+        } */
+    </script>
+</body>
+</html>

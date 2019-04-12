@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery et Javascript</title>
+</head>
+<body>
+  <p>
+    <label for="recherche">Ma barre de recherche</label>
+    <input id="recherche" type="text" value="">
+  </p>
+  
+  <div id="article-journal" class="journal">
+    <p>
+      On lui promettait l’enfer, mais le Paris-Saint-Germain (PSG) a connu une belle et douce soirée dans le « Théâtre des rêves », surnom de l’enceinte des Reds Devils. Portés par leurs 3 800 supporteurs qui avaient fait le déplacement dans le nord de l’Angleterre, les Parisiens se sont imposés sur la pelouse d’Old Trafford, le stade de Manchester United (0-2), mardi 12 février, lors de la manche aller des huitièmes de finale de la Ligue des champions.
+    </p>
+    <p>
+      autre paragraphe
+    </p>
+    <p>Encore un autre paragraphe</p>
+  </div>
+  <div class="journal">Autre contenu super</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script >
+//DEBUT JQUERY    
+$(document).ready(function(){
+//INSTRUCTIONS
+//FIN JQUERY
+});
+
+//TERMINOLOGIE
+// function lambda(argument1, argument2)
+// element.propriété
+// element.methode()
+
+
+//SELECTION UNIQUE
+//JAVASCRIPT
+document.getElementById('article-journal')
+//JQUERY SELECTION ID
+$('#article-journal')
+//JQUERY SELECTION CLASS
+$('.journal')
+
+//SELECTION MULTIPLE
+//JAVASCRIPT
+document.querySelectorAll('#article-journal > p')
+//JQUERY
+$('#article-journal > p')
+
+//MANIPULATION HTML
+// JS SELECT
+var paragraphes = document.querySelectorAll('#article-journal > p')
+var paragraphe = paragraphes[0];
+// $
+$paragraphes = $('#article-journal > p')
+$paragraphe = $paragraphes[0];
+//JAVASCRIPT 
+paragraphe.textContent; // Me donne le texte
+paragraphe.textContent = "nouveau contenu"; // j'insère du nouveau contenu 
+paragraphe.innerHTML; // Me donne le html
+paragraphe.innerHTML = "Nouveau contenu <strong>super</strong> cool"
+//JQUERY
+$paragraphe.text(); // Me donne le texte
+$paragraphe.text("nouveau contenu");// j'insère du nouveau contenu 
+$paragraphe.html(); // Me donne le html
+$paragraphe.html("Nouveau contenu <strong>super</strong> cool");
+$paragraphe.html('<div class="haut-milieu">nouvelle div</div>');
+//RECUPERER VALUE
+//JS
+document.getElementById('recherche').value; //sélectionner la valeur de mon input
+document.getElementById('recherche').value = "nouvelle valeure"
+//$
+$('#recherche').val(); //sélectionner la valeur de mon input
+$('#recherche').val("nouvelle valeure");
+
+//MANIPULATION CSS
+//JS
+paragraphe.style.marginRight = '20px';
+//$
+$paragraphe.css("margin-right",'20px') 
+$paragraphe.css({
+      "background-color": "yellow",
+      "font-weight": "bolder"
+              });
+
+//CSS AJOUTER/SUPPRIMER Class
+//JS
+paragraphe.classList.add('nouvelle-classe'); //Ajouter
+paragraphe.classList.remove('nouvelle-classe'); //Supprimer
+//$
+$paragraphe.addClass('nouvelle-classe');  //Ajouter
+$paragraphe.removeClass('nouvelle-classe');  //Supprimer
+
+//EVENEMENT
+//JS
+paragraphe.addEventListener("click", (event) => { event.preventDefault();/* ANNULE L'évènement*/ })
+//$
+$paragraphe.on("click", (event) => { event.preventDefault();} );
+
+//ANIMATION
+//JS
+paragraphe.style.transition = 'margin-right 2s';
+paragraphe.addEventListener('transitionend', (event) => { /*Fin de l'animation*/ });
+paragraphe.style.marginRight = '100px';
+//$
+$paragraphe.animate({marginRight:100},2000,() => { /*Animation fini*/});
+
+
+</script>
+</body>
+</html>

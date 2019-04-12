@@ -1,0 +1,43 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Exercice 2 jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Ecrire un formulaire et rendre inactive le bouton d'envoie si les elements obligatoire du formulaire ne sont pas remplies -->
+
+    <form id="mainForm" action="" method="POST">
+
+        <div class="champ">
+            <label for="pseudo">Pseudo :</label>
+            <input type="text" id="pseudo" name="pseudo">
+        </div>
+        <br>
+        <hr>
+        <div class="champ">
+            <label for="mail">E-mail :</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <label for="mdp">Mot de Passe</label>
+            <input type="password" id="mdp" name="mdp" required>
+        </div>
+        <br>
+        <hr>
+        <div class="actions">
+            <input type="submit" name="inscription" value="S'inscrire" disabled>
+        </div>
+    </form>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/exo2.js"></script>
+</body>
+
+</html>
